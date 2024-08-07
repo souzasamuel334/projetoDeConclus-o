@@ -8,16 +8,41 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class="bg-primary text-white text-center p-3">
         <h1>Carrinho de Compras</h1>
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="index.html">Página Inicial</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="produtos.html">Produtos</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
-    <section class="container">
-        <div id="carrinhoDeCompras">
-            
-        </div>
-        <button id="comprar" class="btn btn-primary">Encerrar Compra</button>
+    <section class="container my-5">
+        <h2>Itens no Carrinho</h2>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Quantidade</th>
+                    <th>Preço Unitário</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+            <tbody id="carrinho-items">
+                
+            </tbody>
+        </table>
+        <h3>Total: R$<span id="total">0.00</span></h3>
     </section>
+
+    <footer class="bg-dark text-white text-center p-3">
+        <p>&copy; 2024 Samuca Eletrônicos. Todos os direitos reservados.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
